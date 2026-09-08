@@ -1,4 +1,9 @@
 fastapi
-uvicorn
+uvicorn[standard]
+gunicorn
 pydantic
-torch
+python-dotenv
+numpy
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.0
