@@ -1,0 +1,1082 @@
+[
+  {
+    "task": "task_a",
+    "model": "AutoregressiveCoT",
+    "k": 1,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.119,
+      0.174,
+      0.251,
+      0.229,
+      0.123
+    ],
+    "mean_accuracy": 0.1792,
+    "std_accuracy": 0.060093260853443464,
+    "min_accuracy": 0.119,
+    "max_accuracy": 0.251,
+    "sem_accuracy": 0.026874523251585323,
+    "per_seed_latency_ms": [
+      0.14299565124511718,
+      0.13404380798339843,
+      0.13366896057128907,
+      0.14852467346191406,
+      0.13421075439453126
+    ],
+    "mean_latency_ms": 0.13868876953124998,
+    "std_latency_ms": 0.0067476107914339195,
+    "per_seed_flops": [
+      1931776.0,
+      1931776.0,
+      1931776.0,
+      1931776.0,
+      1931776.0
+    ],
+    "mean_flops": 1931776.0,
+    "mean_under_budget_acc": 0.1792,
+    "mean_matched_budget_acc": null,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_a",
+    "model": "AutoregressiveCoT",
+    "k": 2,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.118,
+      0.331,
+      0.235,
+      0.338,
+      0.244
+    ],
+    "mean_accuracy": 0.2532,
+    "std_accuracy": 0.08935714856686063,
+    "min_accuracy": 0.118,
+    "max_accuracy": 0.338,
+    "sem_accuracy": 0.039961731694209655,
+    "per_seed_latency_ms": [
+      0.18934771728515626,
+      0.18436729431152343,
+      0.1932442169189453,
+      0.19470594787597656,
+      0.19513055419921874
+    ],
+    "mean_latency_ms": 0.19135914611816407,
+    "std_latency_ms": 0.004525205257228072,
+    "per_seed_flops": [
+      3863552.0,
+      3863552.0,
+      3863552.0,
+      3863552.0,
+      3863552.0
+    ],
+    "mean_flops": 3863552.0,
+    "mean_under_budget_acc": 0.22992465016146393,
+    "mean_matched_budget_acc": 0.5577464788732394,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_a",
+    "model": "AutoregressiveCoT",
+    "k": 4,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.198,
+      0.458,
+      0.443,
+      0.426,
+      0.428
+    ],
+    "mean_accuracy": 0.39059999999999995,
+    "std_accuracy": 0.10843800071930504,
+    "min_accuracy": 0.198,
+    "max_accuracy": 0.458,
+    "sem_accuracy": 0.04849494819050743,
+    "per_seed_latency_ms": [
+      0.2816739501953125,
+      0.27671160888671875,
+      0.2823591003417969,
+      0.2798414611816406,
+      0.28252401733398436
+    ],
+    "mean_latency_ms": 0.2806220275878906,
+    "std_latency_ms": 0.0024311615666001733,
+    "per_seed_flops": [
+      7727104.0,
+      7727104.0,
+      7727104.0,
+      7727104.0,
+      7727104.0
+    ],
+    "mean_flops": 7727104.0,
+    "mean_under_budget_acc": 0.28453865336658357,
+    "mean_matched_budget_acc": 0.7904761904761906,
+    "mean_over_budget_acc": 0.834074074074074
+  },
+  {
+    "task": "task_a",
+    "model": "AutoregressiveCoT",
+    "k": 8,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.225,
+      0.646,
+      0.516,
+      0.619,
+      0.601
+    ],
+    "mean_accuracy": 0.5214000000000001,
+    "std_accuracy": 0.17267686585064024,
+    "min_accuracy": 0.225,
+    "max_accuracy": 0.646,
+    "sem_accuracy": 0.07722344203672872,
+    "per_seed_latency_ms": [
+      0.5005057678222656,
+      0.5071739196777344,
+      0.529027587890625,
+      0.5161151123046875,
+      0.496343505859375
+    ],
+    "mean_latency_ms": 0.5098331787109375,
+    "std_latency_ms": 0.013076042592920901,
+    "per_seed_flops": [
+      15454208.0,
+      15454208.0,
+      15454208.0,
+      15454208.0,
+      15454208.0
+    ],
+    "mean_flops": 15454208.0,
+    "mean_under_budget_acc": 0.28939393939393937,
+    "mean_matched_budget_acc": 0.746875,
+    "mean_over_budget_acc": 0.7862745098039217
+  },
+  {
+    "task": "task_a",
+    "model": "AutoregressiveCoT",
+    "k": 12,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.237,
+      0.79,
+      0.663,
+      0.742,
+      0.786
+    ],
+    "mean_accuracy": 0.6436000000000001,
+    "std_accuracy": 0.23296630657672368,
+    "min_accuracy": 0.237,
+    "max_accuracy": 0.79,
+    "sem_accuracy": 0.10418569959452209,
+    "per_seed_latency_ms": [
+      0.7412501220703125,
+      0.7415801391601563,
+      0.74537890625,
+      0.7451292724609375,
+      0.7802666625976562
+    ],
+    "mean_latency_ms": 0.7507210205078124,
+    "std_latency_ms": 0.016628322423577237,
+    "per_seed_flops": [
+      23181312.0,
+      23181312.0,
+      23181312.0,
+      23181312.0,
+      23181312.0
+    ],
+    "mean_flops": 23181312.0,
+    "mean_under_budget_acc": 0.26328125,
+    "mean_matched_budget_acc": 0.7506849315068492,
+    "mean_over_budget_acc": 0.7770491803278688
+  },
+  {
+    "task": "task_a",
+    "model": "AutoregressiveCoT",
+    "k": 16,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.241,
+      0.893,
+      0.85,
+      0.922,
+      0.929
+    ],
+    "mean_accuracy": 0.767,
+    "std_accuracy": 0.29568141639271145,
+    "min_accuracy": 0.241,
+    "max_accuracy": 0.929,
+    "sem_accuracy": 0.13223274934750467,
+    "per_seed_latency_ms": [
+      1.001841552734375,
+      1.0066717529296876,
+      1.0016096801757812,
+      1.0432877197265624,
+      1.0075173950195313
+    ],
+    "mean_latency_ms": 1.0121856201171877,
+    "std_latency_ms": 0.017595353738271754,
+    "per_seed_flops": [
+      30787680.0,
+      30787680.0,
+      30787680.0,
+      30787680.0,
+      30787680.0
+    ],
+    "mean_flops": 30787680.0,
+    "mean_under_budget_acc": null,
+    "mean_matched_budget_acc": 0.7131578947368421,
+    "mean_over_budget_acc": 0.7714285714285715
+  },
+  {
+    "task": "task_a",
+    "model": "RecurrentLatentReasoner",
+    "k": 1,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.135,
+      0.148,
+      0.152,
+      0.148,
+      0.136
+    ],
+    "mean_accuracy": 0.1438,
+    "std_accuracy": 0.007758865896508322,
+    "min_accuracy": 0.135,
+    "max_accuracy": 0.152,
+    "sem_accuracy": 0.003469870314579491,
+    "per_seed_latency_ms": [
+      0.08047090911865235,
+      0.08044947052001954,
+      0.08550621032714843,
+      0.09735897827148438,
+      0.08438944244384766
+    ],
+    "mean_latency_ms": 0.08563500213623047,
+    "std_latency_ms": 0.006938609686642937,
+    "per_seed_flops": [
+      1923712,
+      1923712,
+      1923712,
+      1923712,
+      1923712
+    ],
+    "mean_flops": 1923712.0,
+    "mean_under_budget_acc": 0.1438,
+    "mean_matched_budget_acc": null,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_a",
+    "model": "RecurrentLatentReasoner",
+    "k": 2,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.334,
+      0.296,
+      0.283,
+      0.306,
+      0.325
+    ],
+    "mean_accuracy": 0.3088,
+    "std_accuracy": 0.02082546518087893,
+    "min_accuracy": 0.283,
+    "max_accuracy": 0.334,
+    "sem_accuracy": 0.009313431161500048,
+    "per_seed_latency_ms": [
+      0.1045260772705078,
+      0.10212950134277343,
+      0.10517292785644532,
+      0.10594563293457031,
+      0.09689190673828126
+    ],
+    "mean_latency_ms": 0.10293320922851563,
+    "std_latency_ms": 0.003666454242875931,
+    "per_seed_flops": [
+      3847424,
+      3847424,
+      3847424,
+      3847424,
+      3847424
+    ],
+    "mean_flops": 3847424.0,
+    "mean_under_budget_acc": 0.3110871905274489,
+    "mean_matched_budget_acc": 0.27887323943661974,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_a",
+    "model": "RecurrentLatentReasoner",
+    "k": 4,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.334,
+      0.296,
+      0.283,
+      0.307,
+      0.334
+    ],
+    "mean_accuracy": 0.3108,
+    "std_accuracy": 0.02281885185542868,
+    "min_accuracy": 0.283,
+    "max_accuracy": 0.334,
+    "sem_accuracy": 0.010204900783447147,
+    "per_seed_latency_ms": [
+      0.15236589050292967,
+      0.14765708923339843,
+      0.15070191955566406,
+      0.18185647583007813,
+      0.14697686767578125
+    ],
+    "mean_latency_ms": 0.1559116485595703,
+    "std_latency_ms": 0.01466983126775385,
+    "per_seed_flops": [
+      7694848,
+      7694848,
+      7694848,
+      7694848,
+      7694848
+    ],
+    "mean_flops": 7694848.0,
+    "mean_under_budget_acc": 0.3201995012468828,
+    "mean_matched_budget_acc": 0.36190476190476184,
+    "mean_over_budget_acc": 0.2311111111111111
+  },
+  {
+    "task": "task_a",
+    "model": "RecurrentLatentReasoner",
+    "k": 8,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.334,
+      0.297,
+      0.283,
+      0.308,
+      0.334
+    ],
+    "mean_accuracy": 0.31120000000000003,
+    "std_accuracy": 0.02262078690054793,
+    "min_accuracy": 0.283,
+    "max_accuracy": 0.334,
+    "sem_accuracy": 0.010116323442832389,
+    "per_seed_latency_ms": [
+      0.23772889709472655,
+      0.24918511962890624,
+      0.23585821533203125,
+      0.23710966491699217,
+      0.24407763671875
+    ],
+    "mean_latency_ms": 0.24079190673828124,
+    "std_latency_ms": 0.005668427646423856,
+    "per_seed_flops": [
+      15389696,
+      15389696,
+      15389696,
+      15389696,
+      15389696
+    ],
+    "mean_flops": 15389696.0,
+    "mean_under_budget_acc": 0.31553030303030305,
+    "mean_matched_budget_acc": 0.475,
+    "mean_over_budget_acc": 0.27990196078431373
+  },
+  {
+    "task": "task_a",
+    "model": "RecurrentLatentReasoner",
+    "k": 12,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.334,
+      0.297,
+      0.283,
+      0.308,
+      0.334
+    ],
+    "mean_accuracy": 0.31120000000000003,
+    "std_accuracy": 0.02262078690054793,
+    "min_accuracy": 0.283,
+    "max_accuracy": 0.334,
+    "sem_accuracy": 0.010116323442832389,
+    "per_seed_latency_ms": [
+      0.32331927490234375,
+      0.3280374755859375,
+      0.31694607543945313,
+      0.31204925537109374,
+      0.32308575439453124
+    ],
+    "mean_latency_ms": 0.32068756713867186,
+    "std_latency_ms": 0.006231322740396399,
+    "per_seed_flops": [
+      23084544,
+      23084544,
+      23084544,
+      23084544,
+      23084544
+    ],
+    "mean_flops": 23084544.0,
+    "mean_under_budget_acc": 0.31875,
+    "mean_matched_budget_acc": 0.5424657534246574,
+    "mean_over_budget_acc": 0.28315946348733234
+  },
+  {
+    "task": "task_a",
+    "model": "RecurrentLatentReasoner",
+    "k": 16,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.334,
+      0.297,
+      0.283,
+      0.308,
+      0.334
+    ],
+    "mean_accuracy": 0.31120000000000003,
+    "std_accuracy": 0.02262078690054793,
+    "min_accuracy": 0.283,
+    "max_accuracy": 0.334,
+    "sem_accuracy": 0.010116323442832389,
+    "per_seed_latency_ms": [
+      0.4017980651855469,
+      0.40331301879882814,
+      0.40432623291015624,
+      0.3961988525390625,
+      0.42287884521484376
+    ],
+    "mean_latency_ms": 0.40570300292968753,
+    "std_latency_ms": 0.010101911842198889,
+    "per_seed_flops": [
+      30779392,
+      30779392,
+      30779392,
+      30779392,
+      30779392
+    ],
+    "mean_flops": 30779392.0,
+    "mean_under_budget_acc": null,
+    "mean_matched_budget_acc": 0.41052631578947363,
+    "mean_over_budget_acc": 0.30303030303030304
+  },
+  {
+    "task": "task_b",
+    "model": "AutoregressiveCoT",
+    "k": 1,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.119,
+      0.098,
+      0.119,
+      0.116,
+      0.104
+    ],
+    "mean_accuracy": 0.1112,
+    "std_accuracy": 0.009628083921528726,
+    "min_accuracy": 0.098,
+    "max_accuracy": 0.119,
+    "sem_accuracy": 0.004305810028322196,
+    "per_seed_latency_ms": [
+      0.2116183319091797,
+      0.21207510375976563,
+      0.20979446411132813,
+      0.20501983642578125,
+      0.208683837890625
+    ],
+    "mean_latency_ms": 0.20943831481933595,
+    "std_latency_ms": 0.002825073428109275,
+    "per_seed_flops": [
+      1931776.0,
+      1931776.0,
+      1931776.0,
+      1931776.0,
+      1931776.0
+    ],
+    "mean_flops": 1931776.0,
+    "mean_under_budget_acc": 0.1112,
+    "mean_matched_budget_acc": null,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_b",
+    "model": "AutoregressiveCoT",
+    "k": 2,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.114,
+      0.094,
+      0.117,
+      0.105,
+      0.12
+    ],
+    "mean_accuracy": 0.11000000000000001,
+    "std_accuracy": 0.010559356040971439,
+    "min_accuracy": 0.094,
+    "max_accuracy": 0.12,
+    "sem_accuracy": 0.004722287581247038,
+    "per_seed_latency_ms": [
+      0.2800382385253906,
+      0.2877503662109375,
+      0.2875577087402344,
+      0.2791773376464844,
+      0.28087841796875
+    ],
+    "mean_latency_ms": 0.28308041381835936,
+    "std_latency_ms": 0.00421877485191788,
+    "per_seed_flops": [
+      3863552.0,
+      3863552.0,
+      3863552.0,
+      3863552.0,
+      3863552.0
+    ],
+    "mean_flops": 3863552.0,
+    "mean_under_budget_acc": 0.10903225806451614,
+    "mean_matched_budget_acc": 0.12285714285714286,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_b",
+    "model": "AutoregressiveCoT",
+    "k": 4,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.102,
+      0.1,
+      0.12,
+      0.102,
+      0.135
+    ],
+    "mean_accuracy": 0.11179999999999998,
+    "std_accuracy": 0.015303594349041017,
+    "min_accuracy": 0.1,
+    "max_accuracy": 0.135,
+    "sem_accuracy": 0.0068439754529074715,
+    "per_seed_latency_ms": [
+      0.4311982116699219,
+      0.43409286499023436,
+      0.43297921752929686,
+      0.43095233154296875,
+      0.4327973327636719
+    ],
+    "mean_latency_ms": 0.4324039916992188,
+    "std_latency_ms": 0.0013133085728395083,
+    "per_seed_flops": [
+      7727104.0,
+      7727104.0,
+      7727104.0,
+      7727104.0,
+      7727104.0
+    ],
+    "mean_flops": 7727104.0,
+    "mean_under_budget_acc": 0.10953545232273838,
+    "mean_matched_budget_acc": 0.10508474576271185,
+    "mean_over_budget_acc": 0.13008130081300814
+  },
+  {
+    "task": "task_b",
+    "model": "AutoregressiveCoT",
+    "k": 8,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.104,
+      0.123,
+      0.131,
+      0.132,
+      0.119
+    ],
+    "mean_accuracy": 0.12179999999999999,
+    "std_accuracy": 0.011344602240713427,
+    "min_accuracy": 0.104,
+    "max_accuracy": 0.132,
+    "sem_accuracy": 0.0050734603575863305,
+    "per_seed_latency_ms": [
+      0.7535808715820312,
+      0.742629638671875,
+      0.7475723876953125,
+      0.7450174560546875,
+      0.7529397583007813
+    ],
+    "mean_latency_ms": 0.7483480224609376,
+    "std_latency_ms": 0.0048182191466904336,
+    "per_seed_flops": [
+      15454208.0,
+      15454208.0,
+      15454208.0,
+      15454208.0,
+      15454208.0
+    ],
+    "mean_flops": 15454208.0,
+    "mean_under_budget_acc": 0.10621468926553672,
+    "mean_matched_budget_acc": 0.11842105263157894,
+    "mean_over_budget_acc": 0.14351145038167937
+  },
+  {
+    "task": "task_b",
+    "model": "AutoregressiveCoT",
+    "k": 12,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.112,
+      0.152,
+      0.147,
+      0.054,
+      0.128
+    ],
+    "mean_accuracy": 0.1186,
+    "std_accuracy": 0.039456304946104616,
+    "min_accuracy": 0.054,
+    "max_accuracy": 0.152,
+    "sem_accuracy": 0.01764539600009022,
+    "per_seed_latency_ms": [
+      1.0876236572265625,
+      1.0856436767578126,
+      1.0796773681640626,
+      1.08983642578125,
+      1.089318359375
+    ],
+    "mean_latency_ms": 1.0864198974609376,
+    "std_latency_ms": 0.004110565797529661,
+    "per_seed_flops": [
+      23181312.0,
+      23181312.0,
+      23181312.0,
+      23181312.0,
+      23181312.0
+    ],
+    "mean_flops": 23181312.0,
+    "mean_under_budget_acc": 0.12377358490566037,
+    "mean_matched_budget_acc": 0.1267605633802817,
+    "mean_over_budget_acc": 0.11566265060240963
+  },
+  {
+    "task": "task_b",
+    "model": "AutoregressiveCoT",
+    "k": 16,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.111,
+      0.159,
+      0.134,
+      0.141,
+      0.133
+    ],
+    "mean_accuracy": 0.1356,
+    "std_accuracy": 0.01725688268488837,
+    "min_accuracy": 0.111,
+    "max_accuracy": 0.159,
+    "sem_accuracy": 0.007717512552629895,
+    "per_seed_latency_ms": [
+      1.4346121826171876,
+      1.4427786865234375,
+      1.4354161376953125,
+      1.440232177734375,
+      1.436405029296875
+    ],
+    "mean_latency_ms": 1.4378888427734373,
+    "std_latency_ms": 0.0034804549003950363,
+    "per_seed_flops": [
+      30848048.0,
+      30848048.0,
+      30848048.0,
+      30848048.0,
+      30848048.0
+    ],
+    "mean_flops": 30848048.0,
+    "mean_under_budget_acc": null,
+    "mean_matched_budget_acc": 0.14838709677419354,
+    "mean_over_budget_acc": 0.13475479744136462
+  },
+  {
+    "task": "task_b",
+    "model": "RecurrentLatentReasoner",
+    "k": 1,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.112,
+      0.1,
+      0.11,
+      0.116,
+      0.135
+    ],
+    "mean_accuracy": 0.1146,
+    "std_accuracy": 0.012837445228704971,
+    "min_accuracy": 0.1,
+    "max_accuracy": 0.135,
+    "sem_accuracy": 0.00574108003776293,
+    "per_seed_latency_ms": [
+      0.08830448150634766,
+      0.08218422698974609,
+      0.08537763214111328,
+      0.08233094024658204,
+      0.08384291076660157
+    ],
+    "mean_latency_ms": 0.08440803833007812,
+    "std_latency_ms": 0.002534828597417809,
+    "per_seed_flops": [
+      1923712,
+      1923712,
+      1923712,
+      1923712,
+      1923712
+    ],
+    "mean_flops": 1923712.0,
+    "mean_under_budget_acc": 0.1146,
+    "mean_matched_budget_acc": null,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_b",
+    "model": "RecurrentLatentReasoner",
+    "k": 2,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.131,
+      0.142,
+      0.106,
+      0.16,
+      0.154
+    ],
+    "mean_accuracy": 0.1386,
+    "std_accuracy": 0.021372880011828074,
+    "min_accuracy": 0.106,
+    "max_accuracy": 0.16,
+    "sem_accuracy": 0.009558242516278816,
+    "per_seed_latency_ms": [
+      0.10056204986572266,
+      0.10596268463134766,
+      0.10462860870361328,
+      0.10425609588623047,
+      0.1029353256225586
+    ],
+    "mean_latency_ms": 0.10366895294189453,
+    "std_latency_ms": 0.0020443786861591476,
+    "per_seed_flops": [
+      3847424,
+      3847424,
+      3847424,
+      3847424,
+      3847424
+    ],
+    "mean_flops": 3847424.0,
+    "mean_under_budget_acc": 0.13376344086021508,
+    "mean_matched_budget_acc": 0.20285714285714285,
+    "mean_over_budget_acc": null
+  },
+  {
+    "task": "task_b",
+    "model": "RecurrentLatentReasoner",
+    "k": 4,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.135,
+      0.157,
+      0.112,
+      0.158,
+      0.155
+    ],
+    "mean_accuracy": 0.14340000000000003,
+    "std_accuracy": 0.019932385707686875,
+    "min_accuracy": 0.112,
+    "max_accuracy": 0.158,
+    "sem_accuracy": 0.00891403387922662,
+    "per_seed_latency_ms": [
+      0.15006265258789062,
+      0.15738409423828126,
+      0.14544281005859375,
+      0.14511080932617187,
+      0.14822390747070313
+    ],
+    "mean_latency_ms": 0.14924485473632812,
+    "std_latency_ms": 0.00498759013703221,
+    "per_seed_flops": [
+      7694848,
+      7694848,
+      7694848,
+      7694848,
+      7694848
+    ],
+    "mean_flops": 7694848.0,
+    "mean_under_budget_acc": 0.14303178484107582,
+    "mean_matched_budget_acc": 0.15932203389830507,
+    "mean_over_budget_acc": 0.13821138211382117
+  },
+  {
+    "task": "task_b",
+    "model": "RecurrentLatentReasoner",
+    "k": 8,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.137,
+      0.157,
+      0.112,
+      0.158,
+      0.155
+    ],
+    "mean_accuracy": 0.1438,
+    "std_accuracy": 0.019740820651634516,
+    "min_accuracy": 0.112,
+    "max_accuracy": 0.158,
+    "sem_accuracy": 0.008828363381737295,
+    "per_seed_latency_ms": [
+      0.2379489288330078,
+      0.23784051513671875,
+      0.23771795654296876,
+      0.23404739379882813,
+      0.2299062042236328
+    ],
+    "mean_latency_ms": 0.23549219970703125,
+    "std_latency_ms": 0.0035282753046417337,
+    "per_seed_flops": [
+      15389696,
+      15389696,
+      15389696,
+      15389696,
+      15389696
+    ],
+    "mean_flops": 15389696.0,
+    "mean_under_budget_acc": 0.15103578154425612,
+    "mean_matched_budget_acc": 0.08947368421052632,
+    "mean_over_budget_acc": 0.144529262086514
+  },
+  {
+    "task": "task_b",
+    "model": "RecurrentLatentReasoner",
+    "k": 12,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.137,
+      0.156,
+      0.112,
+      0.158,
+      0.155
+    ],
+    "mean_accuracy": 0.1436,
+    "std_accuracy": 0.019578048932414077,
+    "min_accuracy": 0.112,
+    "max_accuracy": 0.158,
+    "sem_accuracy": 0.008755569655939013,
+    "per_seed_latency_ms": [
+      0.3206852722167969,
+      0.3132298889160156,
+      0.31539431762695314,
+      0.31915643310546876,
+      0.31870101928710937
+    ],
+    "mean_latency_ms": 0.31743338623046874,
+    "std_latency_ms": 0.0030404661242262876,
+    "per_seed_flops": [
+      23084544,
+      23084544,
+      23084544,
+      23084544,
+      23084544
+    ],
+    "mean_flops": 23084544.0,
+    "mean_under_budget_acc": 0.15245283018867922,
+    "mean_matched_budget_acc": 0.17464788732394365,
+    "mean_over_budget_acc": 0.13674698795180723
+  },
+  {
+    "task": "task_b",
+    "model": "RecurrentLatentReasoner",
+    "k": 16,
+    "scale": "1m",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "per_seed_accuracy": [
+      0.137,
+      0.157,
+      0.112,
+      0.158,
+      0.155
+    ],
+    "mean_accuracy": 0.1438,
+    "std_accuracy": 0.019740820651634516,
+    "min_accuracy": 0.112,
+    "max_accuracy": 0.158,
+    "sem_accuracy": 0.008828363381737295,
+    "per_seed_latency_ms": [
+      0.4037709045410156,
+      0.39344607543945315,
+      0.3954830322265625,
+      0.4047437438964844,
+      0.40020419311523436
+    ],
+    "mean_latency_ms": 0.39952958984375,
+    "std_latency_ms": 0.0049753145246629995,
+    "per_seed_flops": [
+      30779392,
+      30779392,
+      30779392,
+      30779392,
+      30779392
+    ],
+    "mean_flops": 30779392.0,
+    "mean_under_budget_acc": null,
+    "mean_matched_budget_acc": 0.13870967741935486,
+    "mean_over_budget_acc": 0.144136460554371
+  }
+]

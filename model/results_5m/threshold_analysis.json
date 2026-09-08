@@ -1,0 +1,34 @@
+{
+  "task_a": {
+    "cot": {
+      "50%": "not reached",
+      "60%": "not reached",
+      "70%": "not reached",
+      "80%": "not reached",
+      "90%": "not reached"
+    },
+    "latent": {
+      "50%": "not reached",
+      "60%": "not reached",
+      "70%": "not reached",
+      "80%": "not reached",
+      "90%": "not reached"
+    }
+  },
+  "task_b": {
+    "cot": {
+      "50%": "not reached",
+      "60%": "not reached",
+      "70%": "not reached",
+      "80%": "not reached",
+      "90%": "not reached"
+    },
+    "latent": {
+      "50%": "not reached",
+      "60%": "not reached",
+      "70%": "not reached",
+      "80%": "not reached",
+      "90%": "not reached"
+    }
+  }
+}

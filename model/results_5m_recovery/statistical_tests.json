@@ -1,0 +1,114 @@
+{
+  "task_a": {
+    "k_1": {
+      "cot_mean": 0.22480000000000003,
+      "latent_mean": 0.1546,
+      "mean_diff": 0.07020000000000001,
+      "t_statistic": 2.8821853013154106,
+      "p_value": 0.0449142763968936,
+      "cohens_d": 1.2889524514983943,
+      "statistically_significant": true
+    },
+    "k_2": {
+      "cot_mean": 0.33940000000000003,
+      "latent_mean": 0.3144,
+      "mean_diff": 0.025000000000000022,
+      "t_statistic": 5.781216125786004,
+      "p_value": 0.004446902355710821,
+      "cohens_d": 2.585438449975096,
+      "statistically_significant": true
+    },
+    "k_4": {
+      "cot_mean": 0.44539999999999996,
+      "latent_mean": 0.3338,
+      "mean_diff": 0.11159999999999999,
+      "t_statistic": 59.99653169166443,
+      "p_value": 4.6221363795413515e-07,
+      "cohens_d": 26.831264655356428,
+      "statistically_significant": true
+    },
+    "k_8": {
+      "cot_mean": 0.6334000000000001,
+      "latent_mean": 0.33940000000000003,
+      "mean_diff": 0.29400000000000004,
+      "t_statistic": 77.74622514614808,
+      "p_value": 1.640420381941114e-07,
+      "cohens_d": 34.76916888415812,
+      "statistically_significant": true
+    },
+    "k_12": {
+      "cot_mean": 0.8026000000000002,
+      "latent_mean": 0.3398,
+      "mean_diff": 0.4628,
+      "t_statistic": 134.49851802659913,
+      "p_value": 1.8328259286914663e-08,
+      "cohens_d": 60.149565836091305,
+      "statistically_significant": true
+    },
+    "k_16": {
+      "cot_mean": 0.9974000000000001,
+      "latent_mean": 0.3392,
+      "mean_diff": 0.6581999999999999,
+      "t_statistic": 188.90721029685903,
+      "p_value": 4.710597352710561e-09,
+      "cohens_d": 84.48187273272501,
+      "statistically_significant": true
+    }
+  },
+  "task_b": {
+    "k_1": {
+      "cot_mean": 0.11979999999999999,
+      "latent_mean": 0.1068,
+      "mean_diff": 0.013000000000000001,
+      "t_statistic": 1.3897584579446072,
+      "p_value": 0.23695212717840827,
+      "cohens_d": 0.6215188768538848,
+      "statistically_significant": false
+    },
+    "k_2": {
+      "cot_mean": 0.1216,
+      "latent_mean": 0.1534,
+      "mean_diff": -0.03180000000000001,
+      "t_statistic": -3.2398417602582694,
+      "p_value": 0.031678707817275324,
+      "cohens_d": -1.4489012824560135,
+      "statistically_significant": true
+    },
+    "k_4": {
+      "cot_mean": 0.127,
+      "latent_mean": 0.134,
+      "mean_diff": -0.007000000000000001,
+      "t_statistic": -1.2511975094555352,
+      "p_value": 0.2790460724937483,
+      "cohens_d": -0.5595525368842025,
+      "statistically_significant": false
+    },
+    "k_8": {
+      "cot_mean": 0.12840000000000001,
+      "latent_mean": 0.1448,
+      "mean_diff": -0.016399999999999998,
+      "t_statistic": -1.9108561339910688,
+      "p_value": 0.1286189649572072,
+      "cohens_d": -0.8545608421652952,
+      "statistically_significant": false
+    },
+    "k_12": {
+      "cot_mean": 0.1276,
+      "latent_mean": 0.14500000000000002,
+      "mean_diff": -0.017400000000000002,
+      "t_statistic": -2.077325049543168,
+      "p_value": 0.10634439083920272,
+      "cohens_d": -0.9290080044283282,
+      "statistically_significant": false
+    },
+    "k_16": {
+      "cot_mean": 0.1858,
+      "latent_mean": 0.1456,
+      "mean_diff": 0.0402,
+      "t_statistic": 1.9746731479198585,
+      "p_value": 0.11952813919207261,
+      "cohens_d": 0.8831006784184602,
+      "statistically_significant": false
+    }
+  }
+}

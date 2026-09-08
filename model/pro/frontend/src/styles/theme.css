@@ -1,0 +1,107 @@
+/**
+ * Computational Laboratory & Scientific Workbench Design System
+ * Inspired by Tinkercad, Blender viewports, CAD interfaces, oscilloscopes,
+ * and scientific instrumentation.
+ * 
+ * NO purple AI gradients, NO neon glassmorphism, NO marketing fluff.
+ * Pure precision engineering, high legibility, visible computation.
+ */
+
+:root {
+  /* Laboratory Dark Workbench Palette (Default) */
+  --bg-primary: #080b11;             /* Deep graphite chassis */
+  --bg-surface: #0e131d;             /* Instrument panel face */
+  --bg-surface-elevated: #151c2a;    /* Elevated module deck */
+  --bg-surface-hover: #1c2537;       /* Interactive hover state */
+  --bg-viewport: #06080d;            /* Simulation viewport dark room */
+  
+  /* Technical Precision Borders */
+  --border-subtle: #192233;          /* Panel dividers */
+  --border-medium: #27344e;          /* Module boundaries */
+  --border-prominent: #3d5075;       /* Active focus / instrument borders */
+  --border-active: #60a5fa;
+
+  /* Typography Colors */
+  --text-primary: #f1f5f9;           /* Slate 100 */
+  --text-secondary: #94a3b8;         /* Slate 400 */
+  --text-tertiary: #64748b;          /* Slate 500 */
+  --text-accent: #38bdf8;            /* Sky 400 - telemetry highlight */
+  --text-muted: #475569;
+
+  /* Semantic Computing Colors */
+  --cot-primary: #3b82f6;            /* Blue: Autoregressive scratchpad tokens */
+  --cot-bg: rgba(59, 130, 246, 0.10);
+  --cot-border: rgba(59, 130, 246, 0.45);
+  
+  --latent-primary: #10b981;         /* Green: Recurrent latent state vector */
+  --latent-bg: rgba(16, 185, 129, 0.10);
+  --latent-border: rgba(16, 185, 129, 0.45);
+
+  --ground-truth-primary: #f59e0b;   /* Amber: Physical Ground Truth Target */
+  --ground-truth-bg: rgba(245, 158, 11, 0.10);
+  --ground-truth-border: rgba(245, 158, 11, 0.45);
+
+  --correct-color: #22c55e;
+  --incorrect-color: #ef4444;
+  --warning-color: #f59e0b;
+
+  /* Instrument Telemetry & Display */
+  --grid-line: rgba(255, 255, 255, 0.05);
+  --grid-major: rgba(255, 255, 255, 0.10);
+  --crosshair: rgba(56, 189, 248, 0.5);
+
+  /* Evidence Badges (Research Rigor) */
+  --badge-observed-bg: #064e3b;
+  --badge-observed-text: #a7f3d0;
+  --badge-hypothesis-bg: #312e81;
+  --badge-hypothesis-text: #c7d2fe;
+  --badge-inconclusive-bg: #451a03;
+  --badge-inconclusive-text: #fde68a;
+  --badge-historical-bg: #27272a;
+  --badge-historical-text: #e4e4e7;
+  --badge-recovery-bg: #1e3a8a;
+  --badge-recovery-text: #bfdbfe;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Transitions */
+  --transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='light'] {
+  --bg-primary: #f4f6f9;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #e9eef5;
+  --bg-surface-hover: #dfe5ef;
+  --bg-viewport: #e2e8f0;
+
+  --border-subtle: #dbe3ed;
+  --border-medium: #c2cfdf;
+  --border-prominent: #94a3b8;
+  --border-active: #2563eb;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  --text-accent: #0284c7;
+  --text-muted: #94a3b8;
+
+  --cot-primary: #2563eb;
+  --cot-bg: rgba(37, 99, 235, 0.08);
+  --cot-border: rgba(37, 99, 235, 0.4);
+
+  --latent-primary: #059669;
+  --latent-bg: rgba(5, 150, 105, 0.08);
+  --latent-border: rgba(5, 150, 105, 0.4);
+
+  --ground-truth-primary: #d97706;
+  --ground-truth-bg: rgba(217, 119, 6, 0.08);
+  --ground-truth-border: rgba(217, 119, 6, 0.4);
+
+  --grid-line: rgba(0, 0, 0, 0.04);
+  --grid-major: rgba(0, 0, 0, 0.08);
+  --crosshair: rgba(2, 132, 199, 0.6);
+}

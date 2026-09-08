@@ -1,0 +1,182 @@
+{
+  "task_a": {
+    "cot": [
+      {
+        "k": 1,
+        "mean_accuracy": 0.22480000000000003,
+        "std_accuracy": 0.07423408920435409,
+        "mean_latency_ms": 0.13633826142176986,
+        "mean_flops": 9844224.0
+      },
+      {
+        "k": 2,
+        "mean_accuracy": 0.33940000000000003,
+        "std_accuracy": 0.003049590136395384,
+        "mean_latency_ms": 0.1788201683666557,
+        "mean_flops": 19688448.0
+      },
+      {
+        "k": 4,
+        "mean_accuracy": 0.44539999999999996,
+        "std_accuracy": 0.0037815340802378108,
+        "mean_latency_ms": 0.28903682474046943,
+        "mean_flops": 39376896.0
+      },
+      {
+        "k": 8,
+        "mean_accuracy": 0.6334000000000001,
+        "std_accuracy": 0.0030495901363953837,
+        "mean_latency_ms": 0.5491336081176996,
+        "mean_flops": 78753792.0
+      },
+      {
+        "k": 12,
+        "mean_accuracy": 0.8026000000000002,
+        "std_accuracy": 0.004827007354458872,
+        "mean_latency_ms": 0.849193200096488,
+        "mean_flops": 118130688.0
+      },
+      {
+        "k": 16,
+        "mean_accuracy": 0.9974000000000001,
+        "std_accuracy": 0.004774934554525333,
+        "mean_latency_ms": 1.167711518332362,
+        "mean_flops": 157507584.0
+      }
+    ],
+    "latent": [
+      {
+        "k": 1,
+        "mean_accuracy": 0.1546,
+        "std_accuracy": 0.02140794245134268,
+        "mean_latency_ms": 0.11986605564597994,
+        "mean_flops": 9824640.0
+      },
+      {
+        "k": 2,
+        "mean_accuracy": 0.3144,
+        "std_accuracy": 0.010114346246792236,
+        "mean_latency_ms": 0.07876315619796515,
+        "mean_flops": 19649280.0
+      },
+      {
+        "k": 4,
+        "mean_accuracy": 0.3338,
+        "std_accuracy": 0.0029495762407505278,
+        "mean_latency_ms": 0.140217362344265,
+        "mean_flops": 39298560.0
+      },
+      {
+        "k": 8,
+        "mean_accuracy": 0.33940000000000003,
+        "std_accuracy": 0.008203657720797458,
+        "mean_latency_ms": 0.27929924381896853,
+        "mean_flops": 78597120.0
+      },
+      {
+        "k": 12,
+        "mean_accuracy": 0.3398,
+        "std_accuracy": 0.008348652585896706,
+        "mean_latency_ms": 0.3861811922863126,
+        "mean_flops": 117895680.0
+      },
+      {
+        "k": 16,
+        "mean_accuracy": 0.3392,
+        "std_accuracy": 0.00837854402626135,
+        "mean_latency_ms": 0.5121031574904918,
+        "mean_flops": 157194240.0
+      }
+    ]
+  },
+  "task_b": {
+    "cot": [
+      {
+        "k": 1,
+        "mean_accuracy": 0.11979999999999999,
+        "std_accuracy": 0.01996747355075248,
+        "mean_latency_ms": 0.19721694402396678,
+        "mean_flops": 9844224.0
+      },
+      {
+        "k": 2,
+        "mean_accuracy": 0.1216,
+        "std_accuracy": 0.015469324484281784,
+        "mean_latency_ms": 0.31103462614119054,
+        "mean_flops": 19688448.0
+      },
+      {
+        "k": 4,
+        "mean_accuracy": 0.127,
+        "std_accuracy": 0.014352700094407323,
+        "mean_latency_ms": 0.5103983551263809,
+        "mean_flops": 39376896.0
+      },
+      {
+        "k": 8,
+        "mean_accuracy": 0.12840000000000001,
+        "std_accuracy": 0.015241391012633982,
+        "mean_latency_ms": 0.9672181878238917,
+        "mean_flops": 78753792.0
+      },
+      {
+        "k": 12,
+        "mean_accuracy": 0.1276,
+        "std_accuracy": 0.020815859338494766,
+        "mean_latency_ms": 1.46479924172163,
+        "mean_flops": 118130688.0
+      },
+      {
+        "k": 16,
+        "mean_accuracy": 0.1858,
+        "std_accuracy": 0.03959419149319759,
+        "mean_latency_ms": 1.969075334072113,
+        "mean_flops": 157507584.0
+      }
+    ],
+    "latent": [
+      {
+        "k": 1,
+        "mean_accuracy": 0.1068,
+        "std_accuracy": 0.0037682887362833527,
+        "mean_latency_ms": 0.05639233111869544,
+        "mean_flops": 9824640.0
+      },
+      {
+        "k": 2,
+        "mean_accuracy": 0.1534,
+        "std_accuracy": 0.022232858565645577,
+        "mean_latency_ms": 0.08230145594570785,
+        "mean_flops": 19649280.0
+      },
+      {
+        "k": 4,
+        "mean_accuracy": 0.134,
+        "std_accuracy": 0.014282856857085696,
+        "mean_latency_ms": 0.14246995667926968,
+        "mean_flops": 39298560.0
+      },
+      {
+        "k": 8,
+        "mean_accuracy": 0.1448,
+        "std_accuracy": 0.012336936410632906,
+        "mean_latency_ms": 0.27946958746761086,
+        "mean_flops": 78597120.0
+      },
+      {
+        "k": 12,
+        "mean_accuracy": 0.14500000000000002,
+        "std_accuracy": 0.011554220008291339,
+        "mean_latency_ms": 0.36380125787109135,
+        "mean_flops": 117895680.0
+      },
+      {
+        "k": 16,
+        "mean_accuracy": 0.1456,
+        "std_accuracy": 0.010899541274750965,
+        "mean_latency_ms": 0.4946223637089133,
+        "mean_flops": 157194240.0
+      }
+    ]
+  }
+}

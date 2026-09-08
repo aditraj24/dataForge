@@ -1,0 +1,13 @@
+model:
+  n_neurons: 128
+  state_dim: 64
+  learning_rate: 0.01
+
+training:
+  batch_size: 32
+  epochs: 50
+  device: "cuda"
+
+task:
+  num_associations: 8
+  interference_test: true

@@ -1,0 +1,49 @@
+{
+  "task_a": {
+    "AutoregressiveCoT": {
+      "50%": {
+        "min_observed_latency_ms": 0.5098331787109375,
+        "min_observed_flops": 15454208.0,
+        "at_k": 8,
+        "observed_accuracy": 0.5214000000000001
+      },
+      "60%": {
+        "min_observed_latency_ms": 0.7507210205078124,
+        "min_observed_flops": 23181312.0,
+        "at_k": 12,
+        "observed_accuracy": 0.6436000000000001
+      },
+      "70%": {
+        "min_observed_latency_ms": 1.0121856201171877,
+        "min_observed_flops": 30787680.0,
+        "at_k": 16,
+        "observed_accuracy": 0.767
+      },
+      "80%": "not reached",
+      "90%": "not reached"
+    },
+    "RecurrentLatentReasoner": {
+      "50%": "not reached",
+      "60%": "not reached",
+      "70%": "not reached",
+      "80%": "not reached",
+      "90%": "not reached"
+    }
+  },
+  "task_b": {
+    "AutoregressiveCoT": {
+      "50%": "not reached",
+      "60%": "not reached",
+      "70%": "not reached",
+      "80%": "not reached",
+      "90%": "not reached"
+    },
+    "RecurrentLatentReasoner": {
+      "50%": "not reached",
+      "60%": "not reached",
+      "70%": "not reached",
+      "80%": "not reached",
+      "90%": "not reached"
+    }
+  }
+}

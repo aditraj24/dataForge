@@ -1,0 +1,94 @@
+{
+  "task_a": {
+    "cot": {
+      "threshold_10%": {
+        "achieved": true,
+        "min_k_needed": 1
+      },
+      "threshold_25%": {
+        "achieved": true,
+        "min_k_needed": 2
+      },
+      "threshold_50%": {
+        "achieved": true,
+        "min_k_needed": 8
+      },
+      "threshold_70%": {
+        "achieved": true,
+        "min_k_needed": 12
+      },
+      "threshold_80%": {
+        "achieved": true,
+        "min_k_needed": 12
+      }
+    },
+    "latent": {
+      "threshold_10%": {
+        "achieved": true,
+        "min_k_needed": 1
+      },
+      "threshold_25%": {
+        "achieved": true,
+        "min_k_needed": 2
+      },
+      "threshold_50%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_70%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_80%": {
+        "achieved": false,
+        "min_k_needed": null
+      }
+    }
+  },
+  "task_b": {
+    "cot": {
+      "threshold_10%": {
+        "achieved": true,
+        "min_k_needed": 1
+      },
+      "threshold_25%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_50%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_70%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_80%": {
+        "achieved": false,
+        "min_k_needed": null
+      }
+    },
+    "latent": {
+      "threshold_10%": {
+        "achieved": true,
+        "min_k_needed": 1
+      },
+      "threshold_25%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_50%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_70%": {
+        "achieved": false,
+        "min_k_needed": null
+      },
+      "threshold_80%": {
+        "achieved": false,
+        "min_k_needed": null
+      }
+    }
+  }
+}
