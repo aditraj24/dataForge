@@ -1,8 +1,35 @@
 backend/.venv/
 model/.venv/
+.venv/
+venv/
+env/
+
+# Node
 frontend/node_modules/
 frontend/dist/
+frontend/.next/
+
+# Python
 __pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
 .pytest_cache/
+
+# Environment Variables
 .env
 .env.*
+
+# Project Specific (Models, Data, Results)
+model/export/
+model/results/
+model/results_*/
+*.pth
+*.pt
+*.ckpt
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
