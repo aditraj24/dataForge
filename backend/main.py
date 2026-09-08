@@ -9,14 +9,19 @@ os.chdir(MODEL_DIR)
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from simulation_lab import SimulationLabEngine
 
 app = FastAPI(title="Thinking Budget API")
 
+frontend_url = os.environ.get("FRONTEND_URL", "*")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify d Next.js url
+    allow_origins=[frontend_url] if frontend_url != "*" else ["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

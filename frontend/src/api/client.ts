@@ -17,7 +17,7 @@ import {
 } from '../types';
 import { PRESET_TASK_A_EXAMPLE } from '../data/precomputed';
 
-const API_BASE_URL = ''; // Relative path uses Vite proxy; or direct if configured
+const API_BASE_URL = import.meta.env.VITE_API_URL || ''; // Relative path uses Vite proxy; or direct if configured
 
 export class ApiClient {
   private static async fetchJson<T>(url: string, options?: RequestInit): Promise<T> {
