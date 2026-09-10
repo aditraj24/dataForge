@@ -69,6 +69,41 @@ class SimulateRequest(BaseModel):
     seed: int = 42
     depth: int = 6
 
+class SweepRequest(BaseModel):
+    model: str
+    task: str = "permutation_orbit"
+    budgets: list[int] = [1, 2, 4, 8, 12, 16]
+    seed: int = 42
+    depth: int = 6
+
+class CompareRequest(BaseModel):
+    models: list[str] = ["cot", "latent"]
+    task: str = "permutation_orbit"
+    budget_k: int = 8
+    seed: int = 42
+    depth: int = 6
+
+class ExampleRequest(BaseModel):
+    task: str = "permutation_orbit"
+    depth: int = 6
+    seed: int = 42
+
+@app.post("/api/examples")
+@app.post("/api/example")
+def generate_example_api(req: ExampleRequest):
+    try:
+        example = engine.generate_example(task=req.task, depth=req.depth, seed=req.seed)
+        return {
+            "prompt_tokens": example.input_tokens,
+            "target_answer": example.expected_answer_str,
+            "metadata": example.raw_metadata,
+            **example.to_dict()
+        }
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=400, detail=str(e))
+
 @app.post("/api/simulate")
 def run_simulation(req: SimulateRequest):
     try:
@@ -81,20 +116,51 @@ def run_simulation(req: SimulateRequest):
             example=example,
             measure_timing=True
         )
+        return result.to_dict()
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/sweep")
+def run_sweep(req: SweepRequest):
+    try:
+        example = engine.generate_example(task=req.task, depth=req.depth, seed=req.seed)
+        results = engine.sweep_budgets(
+            model=req.model,
+            task=req.task,
+            example=example,
+            budgets=req.budgets,
+            seed=req.seed
+        )
         return {
-            "predicted_answer": result.predicted_answer_str,
-            "correct": result.correct,
-            "latency_ms": result.latency_ms,
-            "flops": result.analytical_flops,
-            "trace": result.trace
+            "model_id": req.model,
+            "task_id": req.task,
+            "results": [r.to_dict() for r in results]
         }
     except Exception as e:
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=400, detail=str(e))
 
+@app.post("/api/compare")
+def run_compare(req: CompareRequest):
+    try:
+        res = engine.compare_models(
+            models=req.models,
+            task=req.task,
+            budget_k=req.budget_k,
+            seed=req.seed,
+            depth=req.depth
+        )
+        return res
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=400, detail=str(e))
+
 @app.get("/api/pareto")
-def get_pareto(scale: str, task: str = "permutation_orbit"):
+def get_pareto(scale: str = "126k", task: str = "permutation_orbit"):
     try:
         return engine.get_pareto_data(task, scale=scale)
     except Exception as e:

@@ -279,12 +279,12 @@ export const SimulationLab: React.FC = () => {
               fontSize: '0.85rem'
             }}>
               <div>
-                Model: <strong style={{ color: 'var(--text-primary)' }}>{result.model_name}</strong> &nbsp;|&nbsp;
-                Parameters: <strong style={{ color: 'var(--text-accent)' }}>{result.total_parameters.toLocaleString()}</strong>
+                Model: <strong style={{ color: 'var(--text-primary)' }}>{result.model_name || 'Standard Model'}</strong> &nbsp;|&nbsp;
+                Parameters: <strong style={{ color: 'var(--text-accent)' }}>{(result.total_parameters ?? 0).toLocaleString()}</strong>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <EvidenceBadge level="LIVE" />
-                <span>Checkpoint: {result.checkpoint_path.split('/').pop()}</span>
+                <span>Checkpoint: {(result.checkpoint_path || 'model.pt').split('/').pop()}</span>
               </div>
             </div>
 
@@ -351,8 +351,8 @@ export const SimulationLab: React.FC = () => {
                         <span style={{ color: '#ef4444' }}>&cross; Incorrect</span>
                       )}
                     </td>
-                    <td style={{ padding: '0.6rem' }}>{r.latency_ms.toFixed(3)} ms</td>
-                    <td style={{ padding: '0.6rem' }}>{r.analytical_flops.toLocaleString()}</td>
+                    <td style={{ padding: '0.6rem' }}>{(r.latency_ms ?? 0).toFixed(3)} ms</td>
+                    <td style={{ padding: '0.6rem' }}>{(r.analytical_flops ?? (r as any).flops ?? 0).toLocaleString()}</td>
                   </tr>
                 ))}
               </tbody>

@@ -424,7 +424,7 @@ export const SimulationLabBench: React.FC<SimulationLabBenchProps> = ({ onNaviga
                   <div className="telemetry-label">GPU WALL-CLOCK LATENCY</div>
                   <div className="telemetry-value" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                     <Clock size={13} style={{ color: 'var(--text-tertiary)' }} />
-                    {result.latency_ms.toFixed(3)} ms
+                    {(result.latency_ms ?? 0).toFixed(3)} ms
                   </div>
                 </div>
 
@@ -432,7 +432,7 @@ export const SimulationLabBench: React.FC<SimulationLabBenchProps> = ({ onNaviga
                   <div className="telemetry-label">ANALYTICAL FLOPS</div>
                   <div className="telemetry-value" style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.95rem' }}>
                     <Zap size={13} style={{ color: 'var(--text-tertiary)' }} />
-                    {result.analytical_flops.toLocaleString()}
+                    {((result.analytical_flops ?? (result as any).flops) ?? 0).toLocaleString()}
                   </div>
                 </div>
               </div>
@@ -495,8 +495,8 @@ export const SimulationLabBench: React.FC<SimulationLabBenchProps> = ({ onNaviga
                       <span style={{ color: 'var(--incorrect-color)', fontWeight: 700 }}>MISMATCH</span>
                     )}
                   </td>
-                  <td style={{ padding: '6px' }}>{r.latency_ms.toFixed(3)}</td>
-                  <td style={{ padding: '6px' }}>{r.analytical_flops.toLocaleString()}</td>
+                  <td style={{ padding: '6px' }}>{(r.latency_ms ?? 0).toFixed(3)}</td>
+                  <td style={{ padding: '6px' }}>{((r.analytical_flops ?? (r as any).flops) ?? 0).toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>
