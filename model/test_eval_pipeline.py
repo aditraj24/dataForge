@@ -7,7 +7,7 @@ from training_compare_costs import evaluate_model_at_budget, extract_pareto_fron
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-# laod kro trained smoke maadals
+# laod kro trained smoke models
 cot = AutoregressiveCoT().to(device)
 cot.load_state_dict(torch.load('export/models/cot_task_a_s42_aligned/weights.pth'))
 
