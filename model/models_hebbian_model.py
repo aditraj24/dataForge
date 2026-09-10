@@ -2,76 +2,60 @@ import torch
 import torch.nn as nn
 
 class HebbianMemory(nn.Module):
-    """
-    BDH rull implement kiya h yaha pe.
-    sigma purana + nya (outer porduct).
-    """
+    # BDH rule: jo saath aate hain, unka rishta mazboot karo (outer product)
     def __init__(self, n_neurons=128, state_dim=64, lr=0.01):
         super().__init__()
         self.n = n_neurons
         self.d = state_dim
         self.lr = lr
-        
-        # ye state matrix hai jo hum dkhte h
-        # tez weight wali yaddasht
+
+        # sigma: fast-weight synaptic matrix — gradient se nahi, Hebbian se seekhta hai
         self.sigma = nn.Parameter(
-            torch.zeros(n_neurons, state_dim), 
-            requires_grad=False  # hebbian h, gradint ny
+            torch.zeros(n_neurons, state_dim),
+            requires_grad=False
         )
-        
-        # encodr/decodr matrix
+
+        # encoder/decoder: input ko neuron space mein le jao
         self.encoder = nn.Linear(state_dim, n_neurons)
         self.decoder = nn.Linear(state_dim, state_dim)
-        
-        # km acivation dko (BDH m 5% tha)
+
+        # sirf top 10% neurons active rakho (sparse, BDH style)
         self.activation_threshold = 0.1
-        
+
     def hebbian_update(self, x, y):
-        """
-        jab x or y sth aye, 
-        rishta (sigma) majbut kro.
-        """
-        # outr pruduct nikalo
+        # x aur y saath aaye → sigma ko thoda aur strong karo
         outer = torch.bmm(x.unsqueeze(2), y.unsqueeze(1))
-        
-        # sigma updt kro lr k sat
         self.sigma.data += self.lr * outer.mean(dim=0)
-        
-        # thoda htao (decay)
+        # thodi si forgetting bhi chahiye (0.99 decay)
         self.sigma.data *= 0.99
-        
+
     def forward(self, query, store_pairs=None):
-        """
-        query: [batch, d] - jo yad krna h
-        store: agar phle kuj rhna ho
-        """
+        # query: [batch, d] — kya yaad karna hai
         batch_size = query.shape[0]
-        
-        # nya chejz ydd rakne k ly
+
+        # pehle kuch store karna ho toh Hebbian update karo
         if store_pairs is not None:
             key, value = store_pairs
             encoded_key = torch.relu(self.encoder(key))
             self.hebbian_update(encoded_key, value)
-        
-        # pdho ab
+
+        # query encode karo
         encoded_query = torch.relu(self.encoder(query))
-        
-        # spars kro (bht kam values chaeay)
+
+        # sparse karo — threshold se neeche wale zero karo
         mask = (encoded_query > self.activation_threshold).float()
         sparse_query = encoded_query * mask
-        
-        # dmag se nkkalo
+
+        # sigma se memory retrieve karo
         retrieved = sparse_query @ self.sigma  # [batch, d]
-        
-        # decod maro
         output = self.decoder(retrieved)
-        
+
         return {
             'output': output,
-            'sigma': self.sigma.clone(),  # dkhne kk liye
-            'sparsity': (sparse_query > 0).float().mean()  # actvity lavel
+            'sigma': self.sigma.clone(),      # frontend pe dikhane ke liye
+            'sparsity': (sparse_query > 0).float().mean()  # kitne neurons active hain
         }
-    
+
     def reset_memory(self):
-        """dmag saf kardo (nya episd)"""
+        # naya episode — sigma zero karo
         self.sigma.data.zero_()
